@@ -1,1 +1,81 @@
 /* product-grid.css */
+
+.grid-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 277px);
+    grid-template-areas: "top1 top1 top2 top2"
+                        "top1 top1 midL midR"
+                        "botL botL midL botR";
+    gap: 30px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.top1 {
+    background-image: url(../../images/products/card_imagem.jpg);
+    grid-area: top1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top1-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #EDEDED;
+}
+
+.top1-title {
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.top1-subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.cta-group {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+}
+
+.top2 {
+    background-image: url(../../images/products/roxo-verde-grid.jpg);
+    grid-area: top2;
+}
+
+.midL {
+    background-image: url(../../images/products/modelo-feminino.jpg);
+    grid-area: midL;
+}
+
+.midR {
+    background-image: url(../../images/products/moderno-grid.jpg);
+    grid-area: midR;
+}
+
+.bottomL {
+    background-image: url(../../images/products/preto-branco-grid.jpg);
+    grid-area: botL;
+}
+
+.bottomR {
+    background-image: url(../../images/products/futurista-grid.jpg);
+    grid-area: botR;
+}
