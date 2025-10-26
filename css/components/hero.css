@@ -4,6 +4,7 @@
     height: 500px;
     background-size: cover;
     position: relative;
+    border-radius: 20px;
 }
 
 .hero-overlay {
