@@ -42,9 +42,9 @@
 }
 
 .nav-right img {
-    height: 20px;
+    height: 24px;
 }
 
 .nav-right a:hover img {
-    opacity: 0.7%;
+    opacity: 0.7;
 }
