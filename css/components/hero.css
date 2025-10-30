@@ -23,7 +23,7 @@
 }
 
 .hero-content .hero-title {
-    font-size: 1.87rem;
+    font-size: 1.5rem;
     margin-bottom: 40px;
     font-weight: 400;
     line-height: 36px;
@@ -37,5 +37,30 @@
 
 .hero-buttons {
     display: flex;
+    justify-content: center;
     gap: 16px;
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        background: url(../../images/banners/hero_mobile.jpg) no-repeat center;
+        background-size: cover;
+        height: 660px;
+    }
+
+    .hero-overlay {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .hero-content {
+        max-width: 330px;
+    }
+
+    .btn {
+        font-size: 1.1rem;
+        width: 150px;
+    }
 }

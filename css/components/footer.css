@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2.5rem;
     padding: 2.5rem 2.5rem 0;
     letter-spacing: 0.125rem;
     font-size: 1.25rem;
@@ -96,4 +95,52 @@
     font-size: 1.25rem;
     font-weight: 500;
     padding: 1.25rem;
+}
+
+@media (max-width: 1220px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .footer-contact {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer {
+        padding: 0;
+    }
+
+    .footer-top {
+        padding: 1.25rem;
+        align-items: flex-start;
+    }
+
+    .footer-contact {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .footer-social .social-links{
+        gap: 1rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-bottom p {
+        font-size: 1rem;
+        padding: 0.625rem;
+    }
 }

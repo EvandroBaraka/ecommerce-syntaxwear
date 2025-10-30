@@ -6,8 +6,14 @@ body {
 
 main {
     max-width: 1360px;
-    padding: 2.5rem 0 0;
+    padding: 2.5rem 0;
     margin: 0 auto;
+}
+
+@media (max-width: 1280px) {
+    main {
+        padding: 0.625rem;
+    }
 }
 
 .btn {

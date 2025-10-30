@@ -79,3 +79,33 @@
     background-image: url(../../images/products/futurista-grid.jpg);
     grid-area: botR;
 }
+
+@media (max-width: 768px) {
+    .grid-products {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: "top1 top1"
+                            "botL botL"
+                            "midL midR"
+                            "midL botR"
+                            "top2 top2";
+        max-width: 100%;
+        gap: 0.625rem;
+    }
+    
+    .top1 {
+        height: 500px;
+    }
+
+    .bottomL, .top2{
+        height: 190px;
+    }
+
+    .midL {
+        height: 370px;
+    }
+
+    .midR, .bottomR {
+        height: 180px;
+    }
+}
